@@ -14,6 +14,6 @@ implement just enough for each of these to accomplish the following tasks:
 The basic plan is to run with these parameter sets:
 
 - Number of messages in `[10, 100, 1000, 10_000]`
-- Number of senders in `[1, 10, 100, 1000]`, limiting such that `n_senders <= n_messages`.
+- Number of senders in `[1, 10, 100]`, limiting such that `n_senders <= n_messages`.
 
 For fairness, both implementations will use the default ciphersuite and an artificial in-memory keystore.

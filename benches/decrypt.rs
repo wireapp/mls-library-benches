@@ -10,7 +10,7 @@ fn decrypt<Setup: BenchSetup + Default>(c: &mut Criterion) {
     let mut group = c.benchmark_group("decryption");
     group.sampling_mode(SamplingMode::Flat);
 
-    for n_senders in [1, 10, 100, 1000] {
+    for n_senders in [1, 10, 100] {
         for n_messages in [10_usize, 100, 1000, 10_000] {
             if n_senders > n_messages {
                 continue;
